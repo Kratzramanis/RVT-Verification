@@ -3,7 +3,7 @@ name: Execute RVT Matrix Processing
 on:
   push:
     branches: [ main, master ]
-  workflow_dispatch: # Dein manueller Startknopf!
+  workflow_dispatch:
 
 jobs:
   run-python-matrix:
@@ -25,7 +25,7 @@ jobs:
 
     - name: Run RVT Script
       run: |
-        python "3dto2d (1).py"  # <--- ABSOLUT KLEINGESCHRIEBEN, EXAKT WIE BEI DIR!
+        python "3dto2d(1).py"
 
     - name: Commit and Push Generated GIFs
       run: |
